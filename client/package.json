@@ -1,15 +1,18 @@
-{
+{ "homepage": "https://github.com/Thecr00kedman.github.io/Flipkart_Clone",
   "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.1",
